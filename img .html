@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="img.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Iansui&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <h1>Image Gallery</h1>
+    
+  <div class="gallery">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAWGNdwbK-a_-9pEZ1G85F0GSZoFHRPAZRqxMWgvPXSWoDGvM1nrgDV_8U&s=10" alt="Image 1" onclick="openLightbox(this)">
+   
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4J_3bqLPzexdmA1EuT-03j7czw-dkjueCVgj7JzdDBBPZiKKeAWlKxHbm&s=10" alt="Image 2" onclick="openLightbox(this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrjU1qoIlL8NYS9Icn3RSxlD83FQNL1_uwOmWdNsMPMUdFr212_bKOGME2&s=10" alt="Image 3" onclick="openLightbox(this)">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwOQ6fArgdBliqrcHxa0Add046jDDUOwI6mMOTffRtfwYdE6JhvlK0cRE&s=10" alt="Image 1" onclick="openLightbox(this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqEB76ekboKjvmeWPCtVnC367XcU6HCCuug34NeaGGQLPnu_PieNHipxw&s=10" alt="Image 2" onclick="openLightbox(this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbHx7qT9MpC0yv0hgWc8O65pnOrOvoe0Hhg&s" alt="Image 3" onclick="openLightbox(this)">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOaq6IQV4Ct1jYAWrbXuGz-zmb_kWMGRJo3Ig_lcCpwt2AJ8lW8ByX-Lt&s=10" alt="Image 1" onclick="openLightbox(this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4J_3bqLPzexdmA1EuT-03j7czw-dkjueCVgj7JzdDBBPZiKKeAWlKxHbm&s=10" alt="Image 2" onclick="openLightbox(this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrjU1qoIlL8NYS9Icn3RSxlD83FQNL1_uwOmWdNsMPMUdFr212_bKOGME2&s=10" alt="Image 3" onclick="openLightbox(this)">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmeGkHJFeer6r00sCugbP_AkiTl_fayC-1ATYj1XFzHhbYk5RmCHtXjA8k&s=10" alt="Image 1" onclick="openLightbox(this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4J_3bqLPzexdmA1EuT-03j7czw-dkjueCVgj7JzdDBBPZiKKeAWlKxHbm&s=10" alt="Image 2" onclick="openLightbox(this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOafgwnmWy7pWLPT0iGr-6vyH5GQgEqG-78Q&s" alt="Image 3" onclick="openLightbox(this)">
+  </div>
+  
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span>&times;</span>
+    <div>
+      
+    <img id="lightbox-img">
+      <br> 
+      
+    <button class="nav-btn" id="prevBtn" onclick="prevImage()">《</button>
+    <button class="nav-btn" id="nextBtn" onclick="nextImage()">》</button>
+        
+     </div>
+  </div>
+
+  <script src="img.js"></script>
+</body>
+</html>
